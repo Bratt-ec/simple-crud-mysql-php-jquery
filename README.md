@@ -1,2 +1,2 @@
 # simple-crud-mysql-php-jquery
-Pequeño ejemplo de CRUD asincrono usando PHP, MySQL, JQuery.
+Pequeño ejemplo de CRUD asíncrono usando PHP, MySQL, JQuery.
