@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>toastr examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="build/toastr.css" rel="stylesheet" type="text/css" />
+    <style>
+        .row {
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body class="container">
+<section class="row">
+    <h1>toastr</h1>
+
+    <input type="button" value="Error" id="error" />
+<input type="button" value="Info" id="info" />
+<input type="button" value="Warning" id="warning" />
+<input type="button" value="Success" id="success" />
+<br><br><br><br>
+See official example: <a href='http://codeseven.github.io/toastr/demo.html' target='blank'>Here</a>
+
+</section>
+
+<footer class="row">
+    <h2>Links</h2>
+
+    <ul>
+        <li><a href="http://nuget.org/packages/toastr">NuGet</a></li>
+        <li><a href="https://github.com/CodeSeven/toastr">GitHub</a></li>
+    </ul>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="toastr.js"></script>
+
+<script type="text/javascript">
+$(function () {
+    $('#error').click(function () {
+        // make it not dissappear
+        toastr.error("Noooo oo oo ooooo!!!", "Title", {
+            "timeOut": "0",
+            "extendedTImeout": "0"
+        });
+    });
+    $('#info').click(function () {
+   		// title is optional
+        toastr.info("Registro Almacenado correctamente", "INFORMACIÓN DEL SISTEMA");
+    });
+    $('#warning').click(function () {
+        toastr.warning("Warning");
+    });
+    $('#success').click(function () {
+        toastr.success("YYEESSSSSSS");
+    });
+});
+
+</script>
